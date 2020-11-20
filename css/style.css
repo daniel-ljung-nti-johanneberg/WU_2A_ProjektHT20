@@ -1,0 +1,25 @@
+* {
+
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+#grid_wrapper {
+
+
+    display: grid;
+    height: 10vh;
+    width: 10vw;
+    grid-template-columns: 2fr 1fr 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "he he"
+    "na na"
+    "ma ma"
+    "fo fo"
+    ;
+
+
+}
