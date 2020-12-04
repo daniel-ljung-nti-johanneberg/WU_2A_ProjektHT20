@@ -23,6 +23,11 @@
 
 }
 
+p{
+
+    margin-left: 60px;
+}
+
 #main_wrapper{
         grid-area: ma;
         display: grid;
@@ -73,10 +78,33 @@
 h1{
 
     text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size: 50px;
+
+}
+
+#banner_text{
+
+    text-decoration: none;
     font-family: Verdana;
     color: bisque;
     font-size: 50px;
     margin-left: 60px;
+
+
+}
+
+h2 {
+
+
+    text-decoration: none;
+    font-family: Verdana;
+    color: #707070;
+    font-size: 35px;
+    margin-left: 60px;
+    font-style: italic;
+    margin-bottom: 20px;
 
 }
 
@@ -106,6 +134,7 @@ h1{
 
 }
 
+
 #banner_knapp{
 
     text-decoration: none;
@@ -130,22 +159,24 @@ h1{
 }
 
 #article1{
-
     grid-area: a1;
-    background: lightgray;
-
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.664), bisque);
+    padding-top: 20px;
 }
 
 #article2{
-
     grid-area: a2;
-    background: lightgray;
+    background: linear-gradient(to right, bisque, green);
+    padding-top: 20px;
 }
 
 #section2{
-
+    padding-top: 20px;
     grid-area: s2;
-    background: turquoise;
+    background: bisque;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 
