@@ -48,8 +48,20 @@ a {
 
 }
 
+#meny_items{
 
 
+
+
+}
+
+
+.drinks_text{
+    color: rgb(33, 44, 59);
+    text-align: center;
+    padding-bottom: 20px;
+
+}
 
 p{
 
@@ -219,12 +231,36 @@ p{
     background-color: rgb(11, 61, 117);
 }
 
+#header_text{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
 
+}
+
+
+#allergi_rubrik{
+
+    color: rgb(209, 75, 57);
+
+}
 
 #header{
     grid-area: he;
     font-size: 20px;
     background: rgb(29, 29, 28);
+    display: flex;
+    justify-content: center;
+}
+
+#allergi_text{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #fake_nav {
@@ -444,7 +480,7 @@ h2 {
     grid-area: sc;
     display: flex;
     justify-content: center;
-    background-color: rgb(65, 65, 65);
+    background-image:  linear-gradient(to right, rgba(29, 29, 29, 0.397), rgba(44, 43, 102, 0.568)), url("/img/pasta.jpg") ;
 }
 
 .line{
@@ -459,32 +495,30 @@ h2 {
 
 #menu_box{
 
-    display: flex;
-    background: linear-gradient(to right,  rgb(255, 255, 255), rgb(42, 57, 78));
+
+    background: linear-gradient(to right,  rgba(255, 255, 255, 0.651), rgba(42, 57, 78, 0.699));
     border-radius: 50px;
     margin: 50px;
     width: 700px;
     height: 600px;
-    justify-content: center;
+  
     border:  rgb(29, 29, 28) 10px solid;
 
 }
 
 #menu_box2{
+
     border:  rgb(29, 29, 28) 10px solid;
-    display: flex;
-    background: linear-gradient(to right,  rgb(42, 57, 78), rgb(255, 255, 255));
+    background: linear-gradient(to right,  rgba(42, 57, 78, 0.692), rgba(255, 255, 255, 0.637));
     border-radius: 50px;
     margin: 50px;
     width: 700px;
     height: 600px;
-   justify-content: center;
 
 }
 
 #allergier{
-    display: flex;
-    justify-content: center;
+    color: white;
     grid-area: if;
     background-color: rgb(29, 29, 28);
 
