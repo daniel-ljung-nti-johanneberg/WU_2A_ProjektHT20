@@ -3,7 +3,7 @@
 * {
 
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     box-sizing: border-box;
 }
@@ -61,13 +61,15 @@ a {
 input{
 
     outline-style: none;
-    border-radius: 0;
+    border-radius: 5px;
     border: 0.5px black solid;
 }
 
 
 textarea {
     resize: none;
+    outline-style: none;
+    border-radius: 5px;
   }
 
 .form{
@@ -80,6 +82,28 @@ form{
 
     display: flex;
     flex-direction: column;
+
+}
+
+.knapp{
+    color: white;
+    background-color: rgb(29, 29, 28);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#kontakt_text{
+
+
+    margin-bottom: 20px;
+
+}
+
+.knapp:hover{
+
+
+    background-color: rgb(15, 15, 15);
+
 
 }
 
@@ -96,7 +120,7 @@ form{
     height: 100vh;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 100px 700px 100px;
+    grid-template-rows: 50px 100px 950px 100px;
     grid-template-areas:
     "fn fn"
     "he he"
@@ -116,10 +140,10 @@ form{
 }
 
 #contact_box{
-    margin-top: 50px;
+    margin-top: 150px;
     background-color: white;
     width: 500px;
-    height: 500px;
+    height: 550px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -127,9 +151,18 @@ form{
 
 }
 
-#meny_items{
+#meny_items p{
+
+    font-size: 30px;
 
 
+}
+
+#meny_items a{
+    text-decoration: underline;
+    color: darkred;
+    font-style: oblique;
+    margin-left: 60px;
 
 
 }
@@ -142,17 +175,20 @@ form{
 
 }
 
+
+
 p{
 
     margin-left: 60px;
 }
+
 
 #main_wrapper{
         grid-area: ma;
         display: grid;
         width: 100%;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 500px 300px 400px 300px;
+        grid-template-rows: 500px 300px 400px 1fr;
         grid-template-areas:
         "s1 s1"
         "a1 a2"
@@ -199,7 +235,7 @@ p{
     left: 330px;
     color:white;
     font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 #overlay_text2{
@@ -209,7 +245,7 @@ p{
     left: 570px;
     color:white;
     font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 #overlay_text3{
@@ -219,7 +255,7 @@ p{
     left: 860px;
     color:white;
     font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 #overlay_text4{
@@ -228,7 +264,7 @@ p{
     left: 1110px;
     color:white;
     font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .gradient_box{
@@ -320,11 +356,10 @@ p{
 
 }
 
+#header_text h1 {
 
-#allergi_rubrik{
-
-    color: rgb(34, 38, 80);
-
+    margin-top: 10px;
+    color: rgb(180 185 234);
 }
 
 #header{
@@ -335,14 +370,6 @@ p{
     justify-content: center;
 }
 
-#allergi_text{
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 #fake_nav {
     grid-area: fn;
@@ -381,7 +408,7 @@ p{
 h1{
 
     text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     color: black;
     font-size: 50px;
 
@@ -390,7 +417,7 @@ h1{
 #banner_text{
 
     text-decoration: none;
-    font-family: Verdana;
+
     color: rgb(255, 255, 255);
     font-size: 50px;
     margin-left: 60px;
@@ -398,11 +425,7 @@ h1{
 
 }
 
-h3{
 
-    
-
-}
 
 img{
 
@@ -423,7 +446,7 @@ h2 {
 
 
     text-decoration: none;
-    font-family: Verdana;
+
     color: #707070;
     font-size: 35px;
     margin-left: 60px;
@@ -434,14 +457,14 @@ h2 {
 
 .link_nav{
     text-decoration: none;
-    font-family: Verdana;
+
     color: white;
     font-style: oblique;
 }
 
 .link_nav:hover{
     text-decoration: none;
-    font-family: Verdana;
+
     font-size: 25px;
 }
 
@@ -450,7 +473,7 @@ h2 {
 #section1{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.397), rgba(27, 53, 122, 0.568)), url("/img/section.jpg");
     grid-area: s1;
-    background-size: 1600px;
+    background-size: 200vh;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -463,7 +486,7 @@ h2 {
 #banner_knapp{
 
     text-decoration: none;
-    font-family: Verdana;
+
     color: white;
     margin-left: 60px;
     width: 300px;
@@ -602,11 +625,19 @@ h2 {
     color: white;
     grid-area: if;
     background-color: rgb(29, 29, 28);
-
+    
 }
 
-#allergi_text{
+#allergi_section{
+    display: flex;
+    justify-content: center;
 
     color: white;
     margin-top: 8px;
+}
+
+#allergi_section p{
+
+    width: 800px;
+    margin: 0px;
 }
