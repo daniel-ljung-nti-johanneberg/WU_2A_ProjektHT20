@@ -1,5 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/2ce55cb052118b24eda6c12d21cc4429?family=BreeW01-Regular);
-
 * {
 
     font-size: 20px;
@@ -9,7 +7,14 @@
 }
 
 
-li{
+li {
+
+    list-style-type: none;
+
+}
+
+
+ul {
 
     list-style-type: none;
 
@@ -22,8 +27,15 @@ a {
 
 }
 
+h3 {
 
-.fine_box{
+
+    font-size: 50px;
+
+}
+
+
+.fine_box {
 
     background-color: whitesmoke;
     height: 260px;
@@ -50,7 +62,7 @@ a {
 
 }
 
-#logga{
+#logga {
 
     width: 350px;
     height: 100px;
@@ -58,7 +70,7 @@ a {
 }
 
 
-input{
+input {
 
     outline-style: none;
     border-radius: 5px;
@@ -72,34 +84,34 @@ textarea {
     border-radius: 5px;
   }
 
-.form{
+.form {
 
     margin-bottom: 15px;
 
 }
 
-form{
+form {
 
     display: flex;
     flex-direction: column;
 
 }
 
-.knapp{
+.knapp {
     color: white;
     background-color: rgb(29, 29, 28);
     border-radius: 10px;
     margin-top: 10px;
 }
 
-#kontakt_text{
 
 
+#contact_box h1{
     margin-bottom: 20px;
 
 }
 
-.knapp:hover{
+.knapp:hover {
 
 
     background-color: rgb(15, 15, 15);
@@ -107,14 +119,14 @@ form{
 
 }
 
-#meddelande{
+#meddelande {
 
     height: 100px;
 
 
 }
 
-#contact_wrapper{
+#contact_wrapper {
 
     display: grid;
     height: 100vh;
@@ -129,7 +141,7 @@ form{
 }
 
 
-#main_contact{
+#main_contact {
 
     grid-area: m1;
     background-image: url("/img/kontakt.jpg");
@@ -139,7 +151,7 @@ form{
 
 }
 
-#contact_box{
+#contact_box {
     margin-top: 150px;
     background-color: white;
     width: 500px;
@@ -151,14 +163,14 @@ form{
 
 }
 
-#meny_items p{
+.meny_items p {
 
     font-size: 30px;
 
 
 }
 
-#meny_items a{
+.meny_items a {
     text-decoration: underline;
     color: darkred;
     font-style: oblique;
@@ -168,7 +180,14 @@ form{
 }
 
 
-.drinks_text{
+#menu_box h3 {
+    color: rgb(33, 44, 59);
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+#menu_box2 h3 {
     color: rgb(33, 44, 59);
     text-align: center;
     padding-bottom: 20px;
@@ -176,14 +195,13 @@ form{
 }
 
 
-
-p{
+p {
 
     margin-left: 60px;
 }
 
 
-#main_wrapper{
+#main_wrapper {
         grid-area: ma;
         display: grid;
         width: 100%;
@@ -198,7 +216,7 @@ p{
     
     }
 
-#bord_grid{
+#bord_grid {
     grid-area: s2;
     display: grid;
     /* justify-content: center; */
@@ -214,7 +232,7 @@ p{
 
 }
 
-#bord_text{
+#bord_text {
 
     color: white;
 
@@ -228,127 +246,127 @@ p{
 
 }
 
-#overlay_text{
+#overlay_text {
 
     position: absolute;
-    top: 1590px;
-    left: 330px;
+    top: 220px;
+    left: 20px;
     color:white;
     font-size: 25px;
 
 }
 
-#overlay_text2{
+#overlay_text2 {
 
     position: absolute;
-    top: 1590px;
-    left: 570px;
+    top: 220px;
+    left: 260px;
     color:white;
     font-size: 25px;
 
 }
 
-#overlay_text3{
+#overlay_text3 {
 
     position: absolute;
-    top: 1590px;
-    left: 860px;
+    top: 220px;
+    left: 560px;
     color:white;
     font-size: 25px;
 
 }
 
-#overlay_text4{
+#overlay_text4 {
     position: absolute;
-    top: 1590px;
-    left: 1110px;
+    top: 220px;
+    left: 810px;
     color:white;
     font-size: 25px;
 
 }
 
-.gradient_box{
+.gradient_box {
 
     background: linear-gradient(to right, rgba(80, 75, 75, 0.699), rgba(40, 42, 44, 0.753));
     border-radius: 4px;
 
 }
-.bord{
+.bord {
 
     border-radius: 5px;
 
 }
 
-#footer_links{
+#footer_links {
 
 
     display: flex;    
     align-items: center; 
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
 
 }
 
-.bord:hover{
+.bord:hover {
 
     cursor: pointer;
 
 }
 
-#bord_1{
+#bord_1 {
     grid-area: b1;
     background-color: rgb(11, 61, 117);
 }
 
-#bord_2{
+#bord_2 {
     grid-area: b2;
     background-color: rgb(36, 148, 26);
 }
 
-#bord_3{
+#bord_3 {
     grid-area: b3;
     background-color: rgb(11, 61, 117);
 }
 
-#bord_4{
+#bord_4 {
     grid-area: b4;
     background-color: rgb(36, 148, 26);
 }
 
-#bord_5{
+#bord_5 {
     grid-area: b5;
     background-color: rgb(11, 61, 117);
 }
 
-#bord_6{
+#bord_6 {
     grid-area: b6;
     background-color: rgb(36, 148, 26);
 }
 
-#bord_7{
+#bord_7 {
 
     grid-area: b7;
     background-color: rgb(11, 61, 117);
 
 }
 
-#bord_8{
+#bord_8 {
     grid-area: b8;
     background-color: rgb(11, 61, 117);
 }
 
-#bord_9{
+#bord_9 {
     grid-area: b9;
     background-color: rgb(11, 61, 117);
 }
 
-#bord_10{
+#bord_10 {
     grid-area: b10;
     background-color: rgb(11, 61, 117);
 }
 
-#header_text{
+#header_text {
     color: white;
     display: flex;
     justify-content: center;
@@ -362,7 +380,7 @@ p{
     color: rgb(180 185 234);
 }
 
-#header{
+#header {
     grid-area: he;
     font-size: 20px;
     background: rgb(29, 29, 28);
@@ -378,7 +396,7 @@ p{
 
 }
 
-#nav{
+#nav {
 
     grid-area: na;
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(42, 57, 78));
@@ -388,7 +406,7 @@ p{
     height: 50px;
 }
 
-.lista_nav{
+.lista_nav {
     display: flex;    
     align-items: center; 
     justify-content: space-around;
@@ -397,7 +415,7 @@ p{
     list-style-type: none;
 }
 
-#vi_finns{
+#vi_finns {
 
     margin-left: 40px;
     margin-right: 40px;
@@ -405,7 +423,7 @@ p{
 
 }
 
-h1{
+h1 {
 
     text-decoration: none;
 
@@ -414,7 +432,7 @@ h1{
 
 }
 
-#banner_text{
+#banner_text {
 
     text-decoration: none;
 
@@ -427,14 +445,14 @@ h1{
 
 
 
-img{
+img {
 
     box-sizing: border-box;
     display: block;
     
 }
 
-.img_box{
+.img_box {
 
     border-radius: 10px;
     height: 260px;
@@ -455,14 +473,13 @@ h2 {
 
 }
 
-.link_nav{
+.link_nav {
     text-decoration: none;
-
     color: white;
     font-style: oblique;
 }
 
-.link_nav:hover{
+.link_nav:hover {
     text-decoration: none;
 
     font-size: 25px;
@@ -470,7 +487,7 @@ h2 {
 
 /* Banner */
 
-#section1{
+#section1 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.397), rgba(27, 53, 122, 0.568)), url("/img/section.jpg");
     grid-area: s1;
     background-size: 200vh;
@@ -483,7 +500,7 @@ h2 {
 }
 
 
-#banner_knapp{
+#banner_knapp {
 
     text-decoration: none;
 
@@ -501,31 +518,31 @@ h2 {
     border: whitesmoke 5px solid;
 }
 
-#banner_knapp:hover{
+#banner_knapp:hover {
     font-size: 50px;
 
 }
 
-.nice_text{
+.nice_text {
 
     color: white;
 
 }
 
-#article1{
+#article1 {
     grid-area: a1;
     background: rgb(29, 29, 28);
     padding-top: 20px;
 }
 
-#article2{
+#article2 {
     grid-area: a2;
     background: rgb(29, 29, 28);
     padding-top: 20px;
     color: white;
 }
 
-#section2{
+#section2 {
     padding-top: 20px;
     grid-area: s2;
     background-image:  linear-gradient(to right, rgba(29, 29, 29, 0.397), rgba(44, 43, 102, 0.568)), url("/img/italy.jpg") ;
@@ -542,7 +559,7 @@ h2 {
 
 
 
-#section3{
+#section3 {
 
     grid-area: s3;
     background: rgb(29, 29, 28);
@@ -551,7 +568,13 @@ h2 {
     justify-content: left;
 }
 
-#footer{
+#section3 ul li {
+
+    display: inline-block; 
+
+}
+
+#footer {
 
     grid-area: fo;
     color: white;
@@ -562,7 +585,7 @@ h2 {
 
 
 
-#menu_wrapper{
+#menu_wrapper {
 
     display: grid;
     height: 100vh;
@@ -579,15 +602,19 @@ h2 {
 
 }
 
-#sc{
+#sc {
 
     grid-area: sc;
     display: flex;
     justify-content: center;
     background-image:  linear-gradient(to right, rgba(29, 29, 29, 0.397), rgba(44, 43, 102, 0.568)), url("/img/pasta.jpg") ;
+    background-size: 200vh;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
-.line{
+.line {
 
     background-color: rgb(29, 29, 28);
     width: 30px;
@@ -597,7 +624,7 @@ h2 {
 }
 
 
-#menu_box{
+#menu_box {
 
 
     background: linear-gradient(to right,  rgba(255, 255, 255, 0.651), rgba(42, 57, 78, 0.699));
@@ -610,7 +637,7 @@ h2 {
 
 }
 
-#menu_box2{
+#menu_box2 {
 
     border:  rgb(29, 29, 28) 10px solid;
     background: linear-gradient(to right,  rgba(42, 57, 78, 0.692), rgba(255, 255, 255, 0.637));
@@ -621,14 +648,14 @@ h2 {
 
 }
 
-#allergier{
+#allergier {
     color: white;
     grid-area: if;
     background-color: rgb(29, 29, 28);
     
 }
 
-#allergi_section{
+#allergi_section {
     display: flex;
     justify-content: center;
 
@@ -636,7 +663,7 @@ h2 {
     margin-top: 8px;
 }
 
-#allergi_section p{
+#allergi_section p {
 
     width: 800px;
     margin: 0px;

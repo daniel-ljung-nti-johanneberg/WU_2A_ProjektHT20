@@ -14,6 +14,25 @@
         table, td, th {
             border: 1px solid black
         }
+
+        .screenshot5_6 {
+            width: 800px;
+            height: 300px;
+        }
+
+        .skiss {
+            width: 250px;
+            height: 300px;
+        }
+        img {
+            width: 500px;
+            height: 300px;
+        }
+
+        .testning{
+            width: 900px;
+            height: 300px;
+        }
     </style>
 
 </head>
@@ -26,11 +45,17 @@
     Jag ska göra en hemsida för en italiensk restaurang, min målgrupp är främst personer som är intresserade av italiensk mat och vill 
     kunna se vilka bord som är lediga på sidan. Mina 3 sidor kommer att vara: En main-sida(introduktion), en meny sida och sedan en kontakt-sida med
     formulär.
-    <h2>2. Planering</h2>
 
+    <h2>2. Planering</h2>
     <h3>2.1 Handskiss</h3>
     <!-- Här lägger du en bild på din handskiss av layouten. Viktigt att du beskriver vilka boxelement som ska användas. Visa även hur du tänker med ditt grid (Hur många kolumner?) -->
-
+    <br>
+    <img class= "skiss" src="skiss1_index.png" alt="Skiss för index, mha photoshop">
+    <br>
+    <img class= "skiss" src="skiss2_meny.jpg" alt="Handskiss för meny">
+    <br>
+    <img class= "skiss" src="skiss3_kontakt.jpg" alt="Handskiss för Kontakt">
+    <br>
     <h3>2.2 Schema</h3>
     <!-- Vad ska du göra när? Inte för detaljerat. -->
 
@@ -42,9 +67,11 @@
         <tr>
             <td>47</td>
             <td>
+                Börja skissa och tänka ut mått för sidan.
             <!-- Vad görs på lektionerna vecka 47? -->
             </td>
             <td>
+                Fixa basic saker såsom title, html-struktur, css-länk mm
             <!-- Vad görs utanför lektionerna vecka 47? -->
             </td>
         </tr>
@@ -52,9 +79,11 @@
         <tr>          
             <td>48</td>
             <td>
+                Nav bar, grid-system mm
             <!-- Vad görs på lektionerna vecka 48? -->
             </td>
             <td>
+                Välja ut passande färger, styla med CSS.
             <!-- Vad görs utanför lektionerna vecka 48? -->
             </td>
         </tr>
@@ -62,9 +91,11 @@
         <tr>          
             <td>49</td>
             <td>
+            Fixa box-element på sidan, articles, sections osv samt sätta allt på rätt plats mha flex, 
             <!-- Vad görs på lektionerna vecka 49? -->
             </td>
             <td>
+                Påbörja grunden för de två andra sidorna, och utveckla.
             <!-- Vad görs utanför lektionerna vecka 49? -->
             </td>
         </tr>
@@ -72,9 +103,11 @@
         <tr>           
             <td>50</td>
             <td>
+                Slutföra alla tre sidorna
             <!-- Vad görs på lektionen vecka 50? -->
             </td>
             <td>
+                Göra korringeringar som behövs
             <!-- Vad görs utanför lektionen vecka 50? -->
             </td>
         </tr>
@@ -87,6 +120,7 @@
     Första lektionen för projektet: har laddat ner github desktop och forkat mallen.
     Andra lektionen: Färdig med 1:a skissen men ska sätta ut mått på de andra. Har även börjat göra en grid-wrapper för huvudsidan. Nästa gång ska jag fortsätta
     med det. 
+
     <h3>Lektioner vecka 47</h3>
     <!-- Fyll på med dokumentation här. -->
     Denna här veckan har jag laddat ner Github Desktop, och forkat mallen till mitt projekt så att jag kan jobba på det. Jag har även börjat på mina tre
@@ -96,28 +130,98 @@
     Jag har jobbat med att bygga upp alla delar av index sidan och style.css sidan. Nav bar, "en fake nav bar" för att naven ska kunna vara position: fixed 
     ovanför headern. I nav bar lade jag en lista med items i, med flex för att kunna sprida ut de jämnt och i center, with 100% fixade ett problem jag hade 
     med att de inte ville centrera sig. Sedan gjorde jag 2st wrappers, en för själva sidan "main_wrapper" och "grid wrapper" för header och nav, jag tyckte det
-    blev mer strukturerat så, annars är det lätt att der blir många grid-areas och svårt att hålla koll på. 
+    blev mer strukturerat så, annars är det lätt att der blir många grid-areas och svårt att hålla koll på. I mina skisser hade jag valt att ha loggan ovanför nav-bar men 
+    jag ändrade mig och det är därför mina skisser inte stämmer för just det.
 
-
+    <br>
+    <img src="/misc/Screenshot_1.png" alt="Bild på sidan">
+    <br>
     <h3>Lektioner vecka 49</h3>
     <!-- Fyll på med dokumentation här. -->
-
     Igår lade jag gradient på både nav och banner, samt en text på banner (section_1) och en knapp för att komma till menyn. På den satte jag en border samt :hover effekt, om jag har tid ska jag även
     lägga en animation på den. Jag satte display: flex och flex-direction: column, på section_1 för att direction skulle gå upp till neråt vilket jag ville ha för text och knapp, med justify content
     lade jag de på platsen jag ville ha, samt padding för att få de lite längre in. Idag har jag lagt till öppetider och vår historia i section_2 sedan börjat jobba med
     ett bordssystem med boxar.
+    <br>
+    <img src="/misc/Screenshot_2.png" alt="Bild på sidan">
+    <img src="/misc/Screenshot_3.png" alt="Bild på sidan">
+    <img src="/misc/Screenshot_4.png" alt="Bild på sidan">
 
     <h3>Lektioner vecka 50</h3>
+    Jobbat med alla tre sidor: ändrat färgschema efter contrastchecker, bytt namn på sidan, försökt få texten i mina img-boxar vid "Här finns vi:" sektionen att bli centrerade. Hade problem med det men fixade det genom att använda
+    position:absolute och sedan positionera texten där jag ville. Lösningen funkar för en normalstor skärm men för mobil så blir positionen inte där jag vill ha den. Hade kunnat använda
+    media-query i projektet men eftersom det inte var ett krav skippade jag det. Nedan finns bilder på hur det såg ut innan och efter lösningen:
+    <br>
+    <img class="screenshot5_6" src="/misc/Screenshot_5.png" alt="Bild på sidan">
+    <img class="screenshot5_6" src="/misc/Screenshot_5_uppfoljning.png" alt="Bild på sidan">
+    <br>
+    Bilder på sidan efter contrast-checker + mina andra sidor
+    <br>
+    <img src="Screenshot_6.png" alt="Färgändring">
+    <img src="Screenshot_7_meny2.png" alt="Meny-sida">
+    <img src="Screenshot_8_kontakt.png" alt="Screenshot kontaktsida">
+    <br>
     <!-- Fyll på med dokumentation här. -->
-
+    <h3>Vecka 51</h3>
+    Ändring av font-family, slutfört alla tre sidora och gjort korrigeringar med bakgrunderbilder istället för färger på menysidan och på en sektion i indexsidan. Även gjort kontaktformuläret till ett box-element och använt border-radius
+    för att det ska se bättre ut och gjort en logga till hemsidan med hjälp utav photoshop. 
+    <br>
+    <img src="menysida.png" alt="menysida">
+    <br>
+    <img src="kontaktsida.png" alt="kontaktsida">
+  
+    
 
     <h2>4. Testning</h2>
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? -->
+    Resultatet i de tre webbläsrna skillde sig lite. Allt var bra i chrome eftersom det är utifrån den webbläsarn jag testat min hemsida.
+    Däremot så fungerade inte border-radius på img taggar i de andra webbläsrna, men jag bestämde mig för att behålla det eftersom att det inte ser
+    så dåligt ut utan border-radius på img-taggarna vid "Här finns vi:". 
+    Dessutom så hade jag använt mig utav "justify-content: space-evenly;" i footern.
+    Det visade sig att det inte var supportat i edge, därför bytte jag ut det till space-around som fungerar i alla webbläsare.
 
+    Jag testade contrast-checkern tidigare i projektet och gjorde därför en ändring av mitt färgschema, eftersom att färgerna skiljde sig en del åt och inte passade bra ihop. Jag
+    försökte därför ha mer likartade färger genom hela sidan och valde lite mer mörka färger: mörkblå och mörkgrått som passar bättre ihop. Dessutom blir vit text mer synligt på
+    den bakgrunden. Vilket är bra för färgblinda- jag fick sedan även godkänt på contrast-checker.
+
+    Här är mitt resultat från validatorn: 
+    Jag hade en slutande div tag i min kod, förmodligen från mitt tidigare grid-system med bords-bokningen där jag använde divs. Efter att ha tagit bort den så var koden felfri på index-sidan (html)
+    Kontaktsidans html gick igenom utan fel, däremot så hade menysidan 4 varningar gällande att jag skulle sätta en heading i mina sections och articles, men eftersom jag endast använder de för styling så skippade jag det.
+    CSS-validorn på stylesheetet gick igenom utan fel.
+
+
+    <br>
+    <img class="testning" src="/misc/validator.png" alt="validator-html för indexsidan">
+    <br>
+    <img class="testning" src="/misc/validator_check.png" alt="validator-html för indexsidan">
+    <br>
+    <img class="testning" src="/misc/css_check.png" alt="validator-css för indexsidan">
+    <br>
+    <img class="testning" src="/misc/varningar_meny.png" alt="varningar för menyn">
+
+
+
+
+    <br>
+    <img src="/misc/chrome.png" alt="chrome">
+    <br>
+    <img src="/misc/firefox.png" alt="firefox">
+    <br>
+    <img src="/misc/edge.png" alt="edge">
+    <br>
+    
     <h2>5. Utvärdering (skrivs i slutet av arbetet, innan inlämning)</h2>
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
+
+    Kodningen gick bra i projektet, ibland kan har jag inte vetat en specifik tagg eller css-styling men som man kan hitta genom att googla. 
+    Om jag istället hade använt photoshop för att scalea ner vissa bilder till en mindre resolution så hade inläsningstiden för startbilden varit mycket lägre tillexempel. Däremot så komprimerade jag "Här vinns vi:" bilderna till en passande storlek/resolution. Något annat jag hade kunnat förbättra är
+    strukturen i min css kod, då pratar jag om vad kod ligger i förhållande till varandra. Om jag märkte att något skulle fixas i css koden så kanske jag lade in en styling i css-koden som egentligen borde ligga
+    på en rad närmare just det innehållet det gäller. På det sättet hade jag kunnat kommentera i css-koden, tex "Styling för h-taggar här:" Jag försökte fixa till det lite nu i slutet, men det finns möjlighet
+    till bättre css-struktur även omdet inte är ett krav för projektet och intrycket på sidan blir densamma. Animationer till på :hover hade även gjort ett bättre intryck för besökaren. 
+    Jag hade kunnat koda lite mer utanför lektionstid än jag gjorde men slutresultaet är jag nöjd med. Att koda och sedan pusha till github tyckte jag gick bra, det var på så sätt lätt
+    att se när man sedan arbetade på projektet.
 
 </body>
 </html>
